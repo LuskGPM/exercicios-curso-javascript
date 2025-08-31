@@ -15,11 +15,13 @@ btn.onclick = () => {
         return
     } else if (i < f) {
         for (let c = i; c <= f; c+=p) {
-            contando.innerHTML += ` \u{1F449} ${c}`
+            contando.innerHTML += ` ${c} \u{1F449}`
         }
+        contando.innerHTML += `\u{1F3C1}`
     } else {
         for (let c = i; c >= f; c-=p) {
-            contando.innerHTML += ` \u{1F449} ${c}`
+            contando.innerHTML += ` ${c} \u{1F449}`
         }
+        contando.innerHTML += `\u{1F3C1}`
     }
 }
