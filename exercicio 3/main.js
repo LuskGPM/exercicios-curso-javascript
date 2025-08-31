@@ -10,7 +10,7 @@ btn.onclick = () => {
     let i = Number(inicio.value)
     let f = Number(fim.value)
     let p = Number(passo.value)
-    if (i.lenght > 5 || f.lenght > 5 || p.lenght > 5) {
+    if (i > 1000 || f.lenght > 1000 || p.lenght > 1000) {
         alert('Valores muito grandes')
         return
     } else if (i < f) {
