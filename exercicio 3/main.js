@@ -10,7 +10,10 @@ btn.onclick = () => {
     let i = Number(inicio.value)
     let f = Number(fim.value)
     let p = Number(passo.value)
-    if (i < f) {
+    if (i.lenght > 5 || f.lenght > 5 || p.lenght > 5) {
+        alert('Valores muito grandes')
+        return
+    } else if (i < f) {
         for (let c = i; c <= f; c+=p) {
             contando.innerHTML += ` \u{1F449} ${c}`
         }
