@@ -28,6 +28,7 @@
         border: 1px solid black;
         margin: 10px 0px;
         overflow-y: scroll;
+        padding: 10px;
     }
 </style>
 
@@ -50,7 +51,11 @@
     let tabuada = document.querySelector('#tabuada')
 
     btn.onclick = () => {
-        const n = 0
+        if (num.value.length == 0) {
+            alert('Digite um número')
+            return
+        }
+        let n = 0
         tabuada.innerHTML = ''
         while (n != 10) {
             n++
