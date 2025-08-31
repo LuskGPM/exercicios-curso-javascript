@@ -48,14 +48,13 @@
     let num = document.querySelector('#num')
     let btn = document.querySelector('#btn')
     let tabuada = document.querySelector('#tabuada')
-    let n = 0
 
     btn.onclick = () => {
+        const n = 0
         tabuada.innerHTML = ''
         while (n != 10) {
             n++
             tabuada.innerHTML += `${num.value} x ${n} = ${num.value * n} <br>`
         }
-        n = 0
     }
 </script>
